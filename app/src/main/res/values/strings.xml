@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyThunder</string>
+    <string name="action_titles">Темы</string>
+    <string name="action_settings">Удалить все заметки</string>
+    <string name="deleting">Удаление</string>
+    <string name="replyDel">Вы действительно хотите уадалить\nвсе заметки?</string>
+    <string name="existTheme">Такая тема уже есть!</string>
+    <string name="replyTheme">Вы действительно хотите перезаписать заметку?</string>
+    <string name="change_pass">Сменить пароль</string>
+    <string name="changing_password">Смена пароля</string>
+    <string name="old_pass_value">Старый пароль</string>
+    <string name="new_pass_value">Новый пароль</string>
+    <string name="delNote">Удалить заметку</string>
+    <string name="saveNote">Сохранить заметку</string>
+    <string name="textNote">Заметка</string>
+    <string name="textTheme">Тема</string>
+    <string name="thunder">Thunder</string>
+    <string name="splash_text">Only worthy</string>
+    <string name="editTheme">Редактирование темы</string>
+    <string name="name_theme">Тема</string>
+</resources>

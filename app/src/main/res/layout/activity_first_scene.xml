@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    android:weightSum="100">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+        <Button
+            android:id="@+id/secretButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:paddingBottom="35dp"
+            android:stateListAnimator="@null"
+            android:text="@string/thunder"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="38sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="100">
+
+        <AutoCompleteTextView
+            android:id="@+id/title"
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="90"
+            android:background="@drawable/edit_text_style"
+            android:gravity="top"
+            android:textCursorDrawable="@color/white_"
+            android:textColor="@color/white_"
+            android:textColorHint="@color/white_"
+            android:hint="@string/textTheme"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:id="@+id/ibtnEdit"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/ibtnSearch"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@null"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:gravity="top"
+        android:textCursorDrawable="@color/white_"
+        android:textColor="@color/white_"
+        android:textColorHint="@color/white_"
+        android:hint="@string/textNote"
+        android:padding="10dp"
+        android:layout_weight="98"/>
+        <!--android:layout_weight="45"/>-->
+
+    <Button
+        android:id="@+id/btnSaveRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_style"
+        android:text="@string/saveNote"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDelRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_style"
+        android:text="@string/delNote"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+</LinearLayout>
